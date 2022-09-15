@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { Link, Redirect, Navigate } from 'react-router-dom';
+import { Link,
+  //  Redirect,
+    Navigate
+   } from 'react-router-dom';
 import { setAlert } from '../../actions/alert';
 import { register } from '../../actions/auth';
 import PropTypes from 'prop-types';
@@ -88,6 +91,6 @@ Register.propTypes = {
 
 const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated
-});
+}); 
 
 export default connect(mapStateToProps, { setAlert, register })(Register);

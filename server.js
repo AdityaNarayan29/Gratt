@@ -3,7 +3,7 @@ const connectDB = require('./config/db');
 const app = express();
 
 //Connect DB
-connectDB();
+connectDB(); 
 
 //Init Middileware
 app.use(express.json({ extended: false }))
